@@ -1,4 +1,3 @@
-console.log("hello world");
 
 const container = document.querySelector("#container");
 
@@ -23,4 +22,7 @@ container.appendChild(subContent);
 
 const h1Text = document.createElement("h1");
 h1Text.textContent = "I'm in a div";
-subContent.appendChild(h1Text);
+const paragraph = document.createElement("p");
+paragraph.textContent = "I'm in a div too, but as a paragraph";
+
+subContent.append(h1Text, paragraph);
